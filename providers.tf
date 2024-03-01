@@ -1,7 +1,7 @@
 provider "aws" {
   alias = "ecr"
 
-  region = "us-east-2"
+  region = "us-east-1"
 
   assume_role {
     role_arn = var.ecr_account_role_arn
@@ -10,7 +10,7 @@ provider "aws" {
 provider "aws" {
   alias = "pulling_account"
 
-  region = "us-east-2"
+  region = "us-east-1"
 
   assume_role {
     role_arn = var.pulling_account_role_arn

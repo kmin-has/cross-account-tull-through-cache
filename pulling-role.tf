@@ -33,7 +33,7 @@ resource "aws_iam_role_policy" "compute_pull_policy" {
           "ecr:BatchImportUpstreamImage"
         ],
         Resource : [
-          "arn:aws:ecr:${data.aws_region.current.name}:${data.aws_caller_identity.ecr_account.account_id}:repository/registry.k8s.io/*"
+          "arn:aws:ecr:${data.aws_region.current.name}:${data.aws_caller_identity.ecr_account.account_id}:repository/ecr-public-demo/*"
         ]
       },
       {

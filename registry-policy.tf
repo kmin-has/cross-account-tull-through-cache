@@ -15,7 +15,7 @@ resource "aws_ecr_registry_policy" "policy" {
           "ecr:CreateRepository",
           "ecr:BatchImportUpstreamImage"
         ],
-        Resource = "arn:aws:ecr:${data.aws_region.current.name}:${data.aws_caller_identity.ecr_account.account_id}:repository/registry.k8s.io/*"
+        Resource = "arn:aws:ecr:${data.aws_region.current.name}:${data.aws_caller_identity.ecr_account.account_id}:repository/ecr-public-demo/*"
       }
     ]
   })
